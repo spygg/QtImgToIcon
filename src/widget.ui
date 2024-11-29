@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>616</width>
-    <height>481</height>
+    <width>641</width>
+    <height>511</height>
    </rect>
   </property>
   <property name="font">
@@ -71,17 +71,20 @@
        <property name="styleSheet">
         <string notr="true">background-color: rgb(205,196,232);</string>
        </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContents</enum>
+       </property>
        <property name="iconSize">
         <size>
-         <width>160</width>
-         <height>160</height>
+         <width>100</width>
+         <height>100</height>
         </size>
+       </property>
+       <property name="resizeMode">
+        <enum>QListView::Adjust</enum>
        </property>
        <property name="layoutMode">
         <enum>QListView::Batched</enum>
-       </property>
-       <property name="spacing">
-        <number>10</number>
        </property>
        <property name="viewMode">
         <enum>QListView::IconMode</enum>

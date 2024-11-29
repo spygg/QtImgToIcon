@@ -75,13 +75,16 @@ void Widget::dropEvent(QDropEvent *e)
         if (!m_imgageNames.contains(imgName)) {
             m_imgageNames.push_back(imgName);
 
-            QListWidgetItem *imageItem = new QListWidgetItem;
-            imageItem->setIcon(QIcon(imgName));
+            // QListWidgetItem *imageItem = new QListWidgetItem;
+            // imageItem->setIcon(QIcon(imgName));
 
-            imageItem->setSizeHint(QSize(120, 120));
-            ui->listWidgetImages->addItem(imageItem);
+            // imageItem->setSizeHint(QSize(300, 120));
+            // ui->listWidgetImages->addItem(imageItem);
         }
     }
+
+    ui->listWidgetImages->clear();
+    addItemToList();
 }
 
 void Widget::on_toolButtonConvert_clicked()
